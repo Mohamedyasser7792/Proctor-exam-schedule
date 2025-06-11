@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+.login-page {
+  background-color: #1E1E20;
+  color: #717171;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.login-background-blur,
+.login-background-blur-bottom {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: '';
+  background-color: #717171;
+  border-radius: 10px 30px 600px 100px;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.login-background-blur {
+  top: 0;
+  right: 0;
+}
+
+.login-background-blur-bottom {
+  bottom: 0;
+  left: 0;
+  border-radius: 100px 30px 600px 100px;
+}
+
+.login-logo img {
+  width: 40px;
+  opacity: 0.4;
+}
+
+.login-logo {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-color: #2C2C2E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px #0004;
+  margin-bottom: 30px;
+}
+
+.login-title {
+  font-weight: 500;
+  color: #fff;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.login-text-white {
+  color: #fff;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-block: 30px;
+  width: min(300px, 90vw);
+  gap: 15px;
+  z-index: 1;
+}
+
+.login-form input,
+.login-form button {
+  all: unset;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #1C1C1E;
+  box-shadow: 0 10px 30px #0005;
+  border: 1px solid #71717188;
+  transition: background-image 0.5s, opacity .5s, border .5s;
+  width: 100%;
+}
+
+.login-form input {
+  color: #fff;
+}
+
+.login-form button {
+  cursor: pointer;
+  background-color: #fff;
+  color: #1C1C1E;
+}
+
+.login-form p a {
+  border-bottom: 1px solid #717171;
+}
+
+.login-form input + p {
+  font-size: small;
+  text-align: left;
+}
+
+.login-form input:invalid:not(:placeholder-shown) {
+  border-color: red;
+  background-image: url(../assets/c_r.png);
+}
+
+.login-form input:valid:not(:placeholder-shown) {
+  background-image: url(../assets/c_g.png);
+}
+
+.login-form input:invalid:not(:placeholder-shown),
+.login-form input:valid:not(:placeholder-shown) {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+}
+
+.login-form input:invalid:not(:placeholder-shown) + p {
+  color: #a20e0e;
+}
+
+.login-form input:invalid ~ button[type="submit"] {
+  opacity: .6;
+  pointer-events: none;
+  margin-top: 30px;
+}
+
+
+
+/*-------------------------------------------********************************* OLD CSS **********************************-----------------------------------------*/
+
+
+/* Login.css */
+
+/* Login Page Container */
+/* .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c2c6c9;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  /* Card and Form Styles */
+
+  .login-card {
+    background-image: linear-gradient(163deg, #ff4500 0%, #ff6347 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+  }
+  
+  .login-card2 {
+    border-radius: 20px;
+    background-color: #171717;
+    padding: 2em;
+    width: 350px;
+    text-align: center;
+  }
+  
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-heading {
+    color: #ff6347;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .login-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #171717;
+    border-radius: 25px;
+    padding: 0.8em;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .login-input-icon {
+    fill: #ff6347;
+  }
+  
+  .login-input-field {
+    background: none;
+    border: none;
+    outline: none;
+    color: #ff6347;
+    width: 100%;
+  }
+  
+  .login-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1em;
+  }
+  
+  .login-button1 {
+    padding: 0.6em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+    background-image: linear-gradient(163deg, #ff4500 0%, #ff6347 100%);
+    color: white;
+  }
+  
+  .login-button1:hover {
+    background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+    color: rgb(0, 255, 200);
+  }
+
+
+/*------------*/
+
+/* New Animated Background for the Login Page */
+.login-background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  --s: 200px; /* Control the size of the pattern */
+  --c1: #1d1d1d; /* Dark gray */
+  --c2: #4e4f51; /* Medium gray */
+  --c3: #3c3c3c; /* Light gray */
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+
+  animation: animateBackground 10s linear infinite;
+}
+
+/* Keyframes for Background Animation */
+@keyframes animateBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
+/* Centering the Login Form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Retain existing styles for login card and form */
+.login-card {
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.login-card2 {
+  border-radius: 20px;
+  background-color: #171717;
+  padding: 2em;
+  width: 350px;
+  text-align: center;
+}
+
+.login-card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(255, 0, 0, 0.3);
+}

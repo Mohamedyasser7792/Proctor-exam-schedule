@@ -1,0 +1,248 @@
+/* General Page Styling */
+.ta-page-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  .ta-page-container h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+    text-align: center;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  }
+
+/* Form Styling */
+.ta-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.ta-form form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #4a5568;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+/* DatePicker Custom Styling */
+.form-group .rmdp-container {
+  width: 100%;
+}
+
+.form-group .rmdp-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+/* Form Actions */
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.submit-btn,
+.cancel-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.submit-btn {
+  background-color: #4299e1;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #3182ce;
+  transform: translateY(-1px);
+}
+
+.cancel-btn {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.cancel-btn:hover {
+  background-color: #cbd5e0;
+  transform: translateY(-1px);
+}
+
+/* Table Actions */
+.table-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-all-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #f56565;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.delete-all-button:hover {
+  background-color: #e53e3e;
+  transform: translateY(-1px);
+}
+
+  /* Table Styling */
+.ta-table-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+  .ta-table {
+    width: 100%;
+    border-collapse: collapse;
+  font-size: 0.95rem;
+  }
+  
+  .ta-table th {
+  background-color: #f7fafc;
+  color: #4a5568;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+  }
+  
+.ta-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #2d3748;
+  vertical-align: middle;
+}
+
+.ta-table tr:hover {
+  background-color: #f7fafc;
+  }
+  
+/* Action Buttons in Table */
+.edit-btn,
+.delete-btn {
+  padding: 0.5rem 1rem;
+    border: none;
+  border-radius: 4px;
+  font-weight: 500;
+    cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.edit-btn {
+  background-color: #4299e1;
+  color: white;
+  }
+  
+.edit-btn:hover {
+  background-color: #3182ce;
+  transform: translateY(-1px);
+  }
+  
+.delete-btn {
+  background-color: #f56565;
+  color: white;
+  }
+  
+.delete-btn:hover {
+  background-color: #e53e3e;
+  transform: translateY(-1px);
+}
+
+/* Empty State */
+.ta-table td[colspan="6"] {
+  text-align: center;
+  padding: 2rem;
+  color: #718096;
+  font-style: italic;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .ta-form form {
+    grid-template-columns: 1fr;
+    }
+  
+  .ta-table-container {
+    overflow-x: auto;
+    margin: 0 -1rem;
+    border-radius: 0;
+    }
+  
+    .ta-table th,
+    .ta-table td {
+    padding: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    width: 100%;
+}
+
+  .edit-btn,
+  .delete-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}

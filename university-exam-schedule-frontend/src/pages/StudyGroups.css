@@ -1,0 +1,302 @@
+/* General Page Styling */
+.sg-page-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .sg-page-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .sg-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .sg-form input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .sg-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: -5px;
+  }
+  
+  .sg-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Table Styling */
+  .sg-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .sg-table th,
+  .sg-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .sg-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .sg-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Action Buttons */
+  .sg-table .edit-btn,
+  .sg-table .delete-btn {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .sg-table .edit-btn {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .sg-table .edit-btn:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+  }
+  
+  .sg-table .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .sg-table .delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .sg-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sg-form input,
+    .sg-form button {
+      width: 100%;
+    }
+  
+    .sg-table th,
+    .sg-table td {
+      padding: 8px;
+    }
+  }
+  
+.study-groups-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.study-groups-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.study-groups-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.submit-btn,
+.cancel-btn,
+.edit-btn,
+.delete-btn,
+.delete-all-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #357abd;
+}
+
+.cancel-btn {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.cancel-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.edit-btn {
+  background-color: #4a90e2;
+  color: white;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background-color: #357abd;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.delete-all-button {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 10px;
+}
+
+.delete-all-button:hover {
+  background-color: #c82333;
+}
+
+.table-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.study-groups-table-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.study-groups-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.study-groups-table th,
+.study-groups-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.study-groups-table th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: 600;
+}
+
+.study-groups-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.study-groups-table td:last-child {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .study-groups-container {
+    padding: 10px;
+  }
+
+  .study-groups-form {
+    padding: 15px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .submit-btn,
+  .cancel-btn,
+  .edit-btn,
+  .delete-btn,
+  .delete-all-button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .study-groups-table th,
+  .study-groups-table td {
+    padding: 8px 10px;
+  }
+}
+  

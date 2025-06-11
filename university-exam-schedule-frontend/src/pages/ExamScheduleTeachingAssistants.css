@@ -1,0 +1,178 @@
+.exam-schedule-teaching-assistants {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown-container {
+  margin: 20px 0;
+}
+
+#teachingAssistantDropdown {
+  padding: 8px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.export-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.export-button:hover {
+  background-color: #0056b3;
+}
+
+.ta-assignments-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ta-assignments-container h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.controls-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-container label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.ta-select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 200px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.ta-select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.download-btn {
+  padding: 8px 16px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #219a52;
+}
+
+.assignments-table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.assignments-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.assignments-table th,
+.assignments-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.assignments-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.assignments-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.error-message {
+  text-align: center;
+  padding: 20px;
+  color: #e74c3c;
+  background-color: #fde8e8;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .controls-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .select-container {
+    width: 100%;
+  }
+
+  .ta-select {
+    width: 100%;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+
+  .assignments-table th,
+  .assignments-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
